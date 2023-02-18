@@ -1,3 +1,18 @@
 .Comp{
-    color: brown;
+    background-color: #eee;
+    margin-bottom: 2rem;
+    border: 1px solid #555;
+}
+
+.Comp div{
+    margin-left: 2rem;
+    margin-top: 10px;
+}
+
+.Comp p{
+    margin-left: 2rem;
+}
+
+.coment{
+    margin-bottom: 10px;
 }
