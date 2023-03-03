@@ -52,6 +52,15 @@ class App extends Component{
       this.setState({ novoComentario: {...this.state.novoComentario, [name]: value}}); //manipulando o estado adicionando o valor digitado no input pegando pelo seu value e atribuindo no nosso novo objeto
   }
 
+  //criando a função de excluir comentario
+  removerComentario = comentario => {
+    let lista = this.state.comentarios; //pegando o comentario e armazenando nesta variável
+    lista = lista.filter(c => c !== comentario);
+
+    //atualizando nosso estado
+    this.setState({comentarios: lista})
+  }
+
   //logo após chamamos o método render() que será responsável por chamar o nosso state e renderizar suas propriedades
   render(){
     
