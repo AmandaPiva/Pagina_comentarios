@@ -49,7 +49,7 @@ class App extends Component{
   //criando a função que dispara o evento ao digitar nos campos
   digitando = evento => {
       const {name, value} = evento.target;
-      this.setState({...this.novoComentario, [name]: value}); //manipulando o estado adicionando o valor digitado no input pegando pelo seu value e atribuindo no nosso novo objeto
+      this.setState({ novoComentario: {...this.state.novoComentario, [name]: value}}); //manipulando o estado adicionando o valor digitado no input pegando pelo seu value e atribuindo no nosso novo objeto
   }
 
   //logo após chamamos o método render() que será responsável por chamar o nosso state e renderizar suas propriedades
