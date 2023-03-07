@@ -73,7 +73,8 @@ class App extends Component{
             key= {comentario.key}
             nome= {comentario.nome} 
             email= {comentario.email} 
-            data = {comentario.data}>
+            data = {comentario.data}
+            onRemove = {this.removerComentario.bind(this, comentario)} /*este método transforma qualquer coisa em uma nova função para que passemos argumentos a ela   */> 
               {comentario.mensagem}
           </Comentario>  
         ))}

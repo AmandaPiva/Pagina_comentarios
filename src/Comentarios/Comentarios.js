@@ -9,7 +9,7 @@ const Comentario = (props) => { //passando o props como argumento -> obrigatorio
         <div>{props.email}</div>
         <p>{props.children}</p>
         <p>{props.data.toString()}</p>
-        <button>&times;</button>
+        <button onClick={props.onRemove}>&times;</button> 
     </div>
 };
 
