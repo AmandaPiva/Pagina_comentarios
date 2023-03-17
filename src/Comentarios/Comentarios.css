@@ -1,18 +1,56 @@
 .Comp{
-    background-color: #eee;
+    background-color: #fff;
     margin-bottom: 2rem;
-    border: 1px solid #555;
+    border-radius: .5rem;
+    box-shadow: 0 2px 8px -3px;
+    display: flex;
+}
+
+.Comp .avatar{
+    max-width: 68px;
+    max-height: 68px;
+    margin-left: 20px;
+    margin-top: 14px;
+}
+
+.Comp .conteudo{
+    margin-left: 1rem;
+    width: 100%;
+    position: relative;
 }
 
 .Comp div{
-    margin-left: 2rem;
+    margin-left: 1rem;
     margin-top: 10px;
 }
 
-.Comp p{
-    margin-left: 2rem;
+.Comp .nome{
+    font-size: 20px;
+    color: #2d3748;
 }
 
-.coment{
-    margin-bottom: 10px;
+.Comp .email{
+    color:#007bff;
+    margin: .5rem 1rem;
+}
+
+.Comp .mensagem{
+    color: #4a5568;
+    margin: .5rem 1rem;
+}
+
+.Comp .data{
+    text-align: right;
+    margin-right: 18px;
+    color: #718096;
+    font-size: .75rem;
+}
+
+.Comp .conteudo button{
+    position: absolute;
+    top: 0;
+    right: 5px;
+    border: none;
+    background: none;
+    font-size: 1.4rem;
 }

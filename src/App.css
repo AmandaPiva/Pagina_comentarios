@@ -1,3 +1,11 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #f7fafc;
+}
+
 .App {
   padding: 2rem;
 }
@@ -6,5 +14,49 @@ h1{
   padding: 2rem;
 }
 
+/*styling the form*/
+.NovoComentario{
+  border-radius: .5rem;
+  box-shadow: 0 2px 8px -3px;
+  padding: 1rem;
+  background-color: #fff;
+}
 
+.NovoComentario .addComent{
+  margin-left: 1rem;
+}
+
+.NovoComentario input{
+  width: 300px;
+}
+
+.NovoComentario textarea{
+  width: 100%;
+}
+
+.NovoComentario input, .NovoComentario textarea{
+  color: #4a5568;
+  background-color: #fff;
+  border: 1px solid #d1d5d7;
+  font-size: 1rem;
+  padding: .5rem 1rem;
+  margin: 1rem 0;
+  display: block;
+  border-radius: .5rem;
+}
+
+.NovoComentario button{
+  background-color: #4299e1;
+  color: #fff;
+  font-size: 1rem;
+  padding: .6rem .5rem;
+  border-radius: .5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.NovoComentario button:hover{
+  background-color: #2b6cb0;
+  transition: 0.5s;
+}
 

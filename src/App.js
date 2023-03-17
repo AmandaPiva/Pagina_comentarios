@@ -80,17 +80,18 @@ class App extends Component{
         ))}
 
         
-         <form method='post' onSubmit={this.adicionarComentario}> 
+         <form method='post' onSubmit={this.adicionarComentario} className="NovoComentario"> 
+            <h2 class="addComent">Adicionar comentário</h2>
             <div>
-              <input type="text" name= "nome"  value={this.state.novoComentario.nome} onChange={this.digitando} placeholder='Digite seu nome: '/>
+              <input required type="text" name= "nome"  value={this.state.novoComentario.nome} onChange={this.digitando} placeholder='Digite seu nome: '/>
             </div>
 
             <div>
-              <input type="email" name= "email" value={this.state.novoComentario.email} onChange={this.digitando} placeholder='Digite seu email: '/>
+              <input required type="email" name= "email" value={this.state.novoComentario.email} onChange={this.digitando} placeholder='Digite seu email: '/>
             </div>          
 
             <div>
-                <textarea name="mensagem" value={this.state.novoComentario.mensagem} onChange={this.digitando} rows="4"></textarea>
+                <textarea required name="mensagem" value={this.state.novoComentario.mensagem} onChange={this.digitando} rows="4"></textarea>
             </div>
             <button type="submit">Adicionar comentário</button>
           
