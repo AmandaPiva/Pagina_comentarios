@@ -5,10 +5,10 @@ import React from "react";  //importando o react
 const Comentario = (props) => { //passando o props como argumento -> obrigatorio
     /*Trazendo as propriedades ao DOM */
    return <div className="Comp">
-        <div>{props.nome}</div>
-        <div>{props.email}</div>
-        <p>{props.children}</p>
-        <p>{props.data.toString()}</p>
+        <div class="nome">{props.nome}</div>
+        <div class="email">{props.email}</div>
+        <p class="mensagem">{props.children}</p>
+        <p class="data">{props.data.toString()}</p>
         <button onClick={props.onRemove}>&times;</button> 
     </div>
 };
