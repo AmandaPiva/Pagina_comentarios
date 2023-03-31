@@ -66,7 +66,7 @@ class App extends Component{
     
     return( //retorna o nosso state e utilizamos o metodo map para mapearmos o que acontece com cada propriedade do nosso objeto
       <div className="App">
-        <h1>Meu projeto</h1>
+        <h1>Área de comentários!</h1>
         
         {this.state.comentarios.map((comentario, indice) =>(  //colocamos no formato de uma arrow function para realizar a operação do map
           <Comentario //trasendo consigo nosso componente pronto e com nossos dados 
